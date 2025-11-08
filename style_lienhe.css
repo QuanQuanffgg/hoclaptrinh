@@ -24,17 +24,6 @@ img {
 }
 
 /* Đặt font mặc định toàn trang */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #f9fafb;
-  background-image: url("anhnen.jpg");
-  background-size: contain; /* hoặc auto, 50% tùy ý */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
 /* ===== HEADER ===== */
 .header {
   display: flex;
@@ -83,4 +72,85 @@ body {
   color: #ffeb3b;
   border-bottom: 2px solid #ffeb3b;
   padding-bottom: 2px;
+}
+footer{
+    flex-shrink: 0; /* Đảm bảo footer luôn giữ chiều cao ban đầu */
+    background-color: #333; /* Màu Xám Đen */
+    color: #eee;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%}
+footer a {
+ color: #00a8ff;
+ text-decoration: none;
+}
+footer a:hover {
+ text-decoration: underline;
+}
+.body_lienhe {
+    display: flex;
+    flex-direction: row; /* Bố cục ngang: ảnh bên trái, text bên phải */
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Bóng đổ tinh tế */
+    gap: 40px;
+    align-items: center;
+}
+
+.body_lienhe > img {
+    width: 350px; /* Kích thước ảnh cố định */
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Bóng đổ cho ảnh */
+}
+body {
+    font-family: 'Poppins', sans-serif; /* Sử dụng font Poppins hiện đại */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f7f6; /* Nền trắng xám nhẹ */
+    color: #333;}
+.body_lienhe section {
+    flex-grow: 1; /* Cho phép phần text mở rộng */
+}
+
+/* Tiêu đề Tên */
+.body_lienhe h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #007bff; /* Màu tên trùng với màu header */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.body_lienhe h2 a {
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.body_lienhe h2 a:hover {
+    color: #0056b3; /* Xanh đậm hơn khi hover */
+    text-decoration: underline;
+}
+
+/* Các đoạn thông tin chi tiết */
+.body_lienhe p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Link trường học */
+.body_lienhe p a {
+    color: #28a745; /* Màu xanh lá cây nổi bật cho link bên ngoài */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.body_lienhe p a:hover {
+    color: #1e7e34;
 }

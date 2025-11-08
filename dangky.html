@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Đăng ký khóa học</title>
+ <link rel="stylesheet" href="style_dk.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="https://huce.edu.vn/theme1/images/logo/logo_trans.png" alt="Logo">
+      <h1>TechAcademy</h1>
+    </div>
+
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <li><a href="khoahoc.html">Khóa học</a></li>
+        <li><a href="dangky.html">Đăng Ký</a></li>
+        <li><a href="lienhe.html">Nhà Phát triển</a></li>
+      </ul>
+    </nav>
+    </header>
+ <main>
+ <form action="https://formspree.io/f/mwpaevql" method="post">
+ <fieldset>
+ <legend>Thông tin cá nhân</legend>
+ <label for="name">Họ và tên:</label><br>
+ <input type="text" id="name" name="name"
+placeholder="Nhập họ và tên" required><br><br>
+ <label for="email">Email:</label><br>
+ <input type="email" id="email" name="email"
+placeholder="example@gmail.com" required><br><br>
+ <label for="phone">Số điện thoại:</label><br>
+ <input type="tel" id="phone" name="phone"
+placeholder="0901234567" pattern="[0-9]{10}" required><br><br>
+ <label>Giới tính:</label><br>
+ <input type="radio" id="male" name="gender" value="Nam"
+checked>
+ <label for="male">Nam</label>
+ <input type="radio" id="female" name="gender"
+value="Nữ">
+ <label for="female">Nữ</label>
+ <input type="radio" id="other" name="gender"
+value="Khác">
+ <label for="other">Khác</label>
+ </fieldset>
+ <fieldset>
+ <legend>Thông tin khóa học</legend>
+ <label for="course">Ngành học quan tâm:</label><br>
+ <select id="course" name="course" required>
+ <option value="">-- Chọn khóa học --</option>
+ <option value="frontend">Lập trình Front-end</option>
+ <option value="backend">Lập trình Back-end</option>
+ <option value="fullstack">Lập trình Fullstack</option>
+ </select><br><br>
+ <label>Hình thức học:</label><br>
+ <input type="checkbox" id="online" name="mode"
+value="online">
+ <label for="online">Online</label>
+ <input type="checkbox" id="onsite" name="mode"
+value="onsite">
+ <label for="onsite">Tại trung tâm</label><br><br>
+ <label for="note">Ghi chú thêm:</label><br>
+ <textarea id="note" name="note" rows="4" cols="40"
+placeholder="Nhập ghi chú (nếu có)"></textarea>
+ </fieldset>
+ <br>
+ <button type="submit">Nhận thông tin thanh toán</button>
+ <p><a href="1.BailamTH1.html">← Quay lại trang chủ</a></p>
+ </form>
+ </main>
+    <footer>
+        <p>© 2025 Được phát triển bởi Trần Anh Quân. All rights reserved.</p>
+        <p>Sinh viên năm 2 - ĐH Xây Dựng Hà Nội (HUCE)</p>
+        <p>Contact: anhquanttlt101@gmail.com</p>
+    </footer>
+
+</body>
+</html>

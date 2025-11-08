@@ -290,3 +290,218 @@ footer a {
 footer a:hover {
  text-decoration: underline;
 }
+/* ---------------------------------- */
+/* PHẦN CSS CŨ CỦA HEADER VÀ FOOTER GIỮ NGUYÊN */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* 2. MAIN CONTENT (Nội dung Giới thiệu) */
+/* ---------------------------------- */
+
+.gioithieu-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+/* Sứ Mệnh & Tầm Nhìn */
+.academy-mission-vision {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+    padding: 0 40px;
+}
+
+.mission-vision-item {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Bóng đổ mạnh hơn */
+    text-align: left;
+    border-left: 5px solid #28a745; /* Đường viền nhấn bên trái */
+}
+
+.mission-vision-item h3 {
+    color: #007bff;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.mission-vision-item p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.mission-vision-item .icon-mission,
+.mission-vision-item .icon-vision {
+    font-size: 3em;
+    float: right; /* Đặt icon sang bên phải */
+    color: #28a745;
+    margin-left: 15px;
+}
+
+/* Lịch sử và Thành tựu */
+.history-achievements {
+    background-color: #e3f2fd; /* Nền xanh nhạt nổi bật */
+    padding: 50px 80px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+.history-content p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.history-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history-content ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%2328a745" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Giá Trị Cốt Lõi (Mở rộng Grid) */
+.values-section {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+.section-title-small {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.values-grid-extended {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Đảm bảo 5 cột */
+    gap: 20px;
+}
+
+.value-card {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    background-color: #f8f9fa;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.value-card h4 {
+    color: #007bff;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+/* Đội Ngũ Giảng Viên */
+.team-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 280px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    color: #343a40;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #28a745; /* Màu xanh lá cho chức danh */
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.team-note {
+    margin-top: 30px;
+    font-style: italic;
+    color: #777;
+}
+
+/* CTA Banner (Giữ nguyên) */
+.cta-banner { /* ... styles cũ ... */ }
+
+
+/* Responsive cho Mobile */
+@media (max-width: 768px) {
+    /* ... các styles mobile cũ ... */
+
+    .academy-mission-vision,
+    .history-achievements {
+        padding: 20px;
+    }
+
+    .academy-mission-vision {
+        flex-direction: column;
+    }
+
+    .values-grid-extended {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-member {
+        width: 100%;
+        max-width: 300px;
+    }
+}

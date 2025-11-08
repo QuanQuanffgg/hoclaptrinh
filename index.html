@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Header Example</title>
+  <title>QA Academy</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
   <!-- ===== HEADER START ===== -->
   <header class="header">
     <div class="logo">
       <img src="https://huce.edu.vn/theme1/images/logo/logo_trans.png" alt="Logo">
-      <h1>TechAcademy</h1>
+      <h1>  QA Academy</h1>
     </div>
 
     <nav class="navigation">
       <ul>
         <li><a href="index.html">Trang chủ</a></li>
         <li><a href="gioithieu.html">Giới thiệu</a></li>
-        <li><a href="khoahoc.html">Khóa học</a></li>
+        <li><a href="#khoahoc">Khóa học</a></li>
         <li><a href="dangky.html">Đăng Ký</a></li>
         <li><a href="lienhe.html">Nhà Phát triển</a></li>
       </ul>
@@ -29,15 +29,16 @@
   <!-- ===== HEADER END ===== -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Khám Phá Hành Trình Học Lập Trình Cùng EduCenter</h1>
-      <p>Tham gia khóa học lập trình hiện đại, được hướng dẫn bởi các giảng viên có kinh nghiệm và cập nhật công nghệ mới nhất.</p>
-      <a href="#" class="btn-primary">Đăng ký ngay</a>
+      <h1>Khám Phá Hành Trình Học Lập Trình Cùng QA - Academy</h1>
+      <p>Tham gia khóa học lập trình hiện đại, được hướng dẫn bởi các hướng dẫn viên đang theo học chương trình lập trình mới nhất</p>
+      <a href="dangky.html " class="btn-primary">Đăng ký ngay</a>
     </div>
     <div class="hero-image">
       <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Students learning coding">
     </div>
   </section>
   <!-- ===== POPULAR COURSES SECTION ===== -->
+   <div class="khoahoc">
   <section class="courses-section">
     <h2 class="section-title">Khóa học phổ biến</h2>
     
@@ -46,16 +47,16 @@
       <!-- Course 1 -->
       <div class="course-card">
         <div class="course-image">
-          <img src="https://picsum.photos/seed/picsum/400/400" alt="React Developer" />
-          <span class="badge blue">Bán chạy nhất</t></span>
+          <img src="https://picsum.photos/seed/picsum/400/400" alt="Back-end" />
+          <span class="badge red">HOT</t></span>
         </div>
         <div class="course-content">
-          <h3>From 0 to React Developer</h3>
-          <p>Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!</p>
-          <p class="author">by Mathew Glock</p>
+          <h3>Back End</h3>
+          <p>Học lập trình Back-end với các công cụ ReactJS,...</p>
+          <p class="author">by Trần Anh Quân</p>
           <div class="course-footer">
-            <span class="price">$12.50</span>
-            <span class="meta">48.5 giờ • 32 bài học</span>
+            <span class="price">1.800.000VNĐ</span>
+            <span class="meta">2 tiếng • 16 buổi học</span>
           </div>
         </div>
       </div>
@@ -63,16 +64,16 @@
       <!-- Course 2 -->
       <div class="course-card">
         <div class="course-image">
-          <img src="https://picsum.photos/seed/picsum/400/400" alt="Vue Guide" />
-          <span class="badge red">Giảm giá</span>
+          <img src="https://picsum.photos/seed/picsum/400/400" alt="front-end" />
+          <span class="badge blue">Bán chạy nhất</span>
         </div>
         <div class="course-content">
-          <h3>Vue - The Complete Guide</h3>
-          <p>Vue.js is an awesome JavaScript Framework for building Frontend Applications. You will learn everything you need.</p>
-          <p class="author">by Andrew Fiesta (Stanford Teacher)</p>
+          <h3>Front End</h3>
+          <p>DÀNH CHO HỌC SINH CẤP 3 tập lập trình WEB</p>
+          <p class="author">by Trần Anh Quân</p>
           <div class="course-footer">
-            <span class="price red">$9.90 <del>$19.90</del></span>
-            <span class="meta">98.5 giờ • 44 bài học</span>
+            <span class="price red">1.000.000VNĐ <del>1.800.000VNĐ</del></span>
+            <span class="meta">2 tiếng • 16 buổi học</span>
           </div>
         </div>
       </div>
@@ -80,56 +81,28 @@
       <!-- Course 3 -->
       <div class="course-card">
         <div class="course-image">
-          <img src="https://picsum.photos/seed/picsum/400/400" alt="Java Programming" />
+          <img src="https://picsum.photos/seed/picsum/400/400" alt="Full-stack" />
         </div>
         <div class="course-content">
-          <h3>Java Programming</h3>
-          <p>Learn the core Java skills needed to apply for Java developer positions in just 14 hours. It was never easier to become a Java developer.</p>
-          <p class="author">by Jaksan Anthouine</p>
+          <h3>Full Stack</h3>
+          <p>Lập trình Full Stack từ kiến thức cơ bản đến kiến thức nâng cao</p>
+          <p class="author">by Trần Anh Quân</p>
           <div class="course-footer">
-            <span class="price">$14.90</span>
-            <span class="meta">14 giờ • 16 bài học</span>
+            <span class="price">3.500.000VNĐ</span>
+            <span class="meta">2 tiếng • 42 buổi học</span>
           </div>
         </div>
       </div>
 
     </div>
-          <div class="course-card">
-        <div class="course-image">
-          <img src="https://picsum.photos/seed/picsum/400/400" alt="Vue Guide" />
-          <span class="badge red">Giảm giá</span>
-        </div>
-        <div class="course-content">
-          <h3>Vue - The Complete Guide</h3>
-          <p>Vue.js is an awesome JavaScript Framework for building Frontend Applications. You will learn everything you need.</p>
-          <p class="author">by Andrew Fiesta (Stanford Teacher)</p>
-          <div class="course-footer">
-            <span class="price red">$109.90 <del>$129.90</del></span>
-            <span class="meta">98.5 giờ • 44 bài học</span>
-          </div>
-        </div>
-      </div>
-      <div class="course-card">
-        <div class="course-image">
-          <img src="https://picsum.photos/seed/picsum/400/400" alt="Vue Guide" />
-          <span class="badge red">Giảm giá</span>
-        </div>
-        <div class="course-content">
-          <h3>Vue - The Complete Guide</h3>
-          <p>Vue.js is an awesome JavaScript Framework for building Frontend Applications. You will learn everything you need.</p>
-          <p class="author">by Andrew Fiesta (Stanford Teacher)</p>
-          <div class="course-footer">
-            <span class="price red">$99.90 <del>$119.90</del></span>
-            <span class="meta">98.5 giờ • 44 bài học</span>
-          </div>
-        </div>
-      </div>
-
+ 
   </section>
+  </div>
   <!-- ===== POPULAR COURSES END ===== -->
-   <footer>
-    <h2>Được phát triển bởi Trần Anh Quân. All rights reserved</h2>
-    <h2>Contact: anhquanttlt101@gmail.com</h2>
-   </footer>
+    <footer>
+        <p>© 2025 Được phát triển bởi Trần Anh Quân. All rights reserved.</p>
+        <p>Contact: anhquanttlt101@gmail.com</p>
+    </footer>
+
 </body>
 </html>
