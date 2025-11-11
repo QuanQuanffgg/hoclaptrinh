@@ -158,6 +158,9 @@ a {
   background-color: #007bff;
   padding: 15px 40px;
   color: #fff;
+  position: fixed;
+  right:0;
+  left:0;
 }
 
 /* Logo */
