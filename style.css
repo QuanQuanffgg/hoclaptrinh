@@ -22,7 +22,7 @@ body {
   align-items: center;
   /* Căn giữa theo chiều dọc */
   background-color: #007bff;
-  padding: 100px 40px;
+  padding: 15px 40px;
   color: #fff;
   position: fixed;
   right:0;
@@ -72,7 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 70px 20px;
+  padding: 110px 20px;
   background-color: #f0f4ff;
   left:90;
 }
@@ -295,6 +295,7 @@ footer a:hover {
  text-decoration: underline;
 
 }
+
 
 
 
