@@ -27,6 +27,7 @@ body {
   right:0;
   left:0;
   z-index: 1000; 
+  top:0;
 }
 
 /* Logo */
@@ -215,3 +216,4 @@ body {
     size:10px;
 
 }
+
