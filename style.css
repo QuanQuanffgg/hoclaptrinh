@@ -27,6 +27,7 @@ body {
   position: fixed;
   right:0;
   left:0;
+   z-index: 1000; 
 }
 
 /* Logo */
@@ -292,4 +293,5 @@ footer a {
 }
 footer a:hover {
  text-decoration: underline;
+
 }
