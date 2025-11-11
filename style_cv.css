@@ -26,6 +26,7 @@ body {
   position: fixed;
   right:0;
   left:0;
+  z-index: 1000; 
 }
 
 /* Logo */
@@ -212,4 +213,5 @@ body {
 .section h3{
     color:#87e2f3;
     size:10px;
+
 }
